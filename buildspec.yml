@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   parameter-store:
-    NGINX_DEMO_DOCKER_REPOSITORY_URL: "/staging/xteam-blog/NGINX_DOCKER_REPOSITORY_URL"
+    NGINX_DEMO_DOCKER_REPOSITORY_URL: "/dev/nginx-demo/NGINX_DOCKER_REPOSITORY_URL"
 
 phases:
   pre_build:
