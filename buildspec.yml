@@ -19,6 +19,6 @@ phases:
       - docker tag $NGINX_DEMO_DOCKER_REPOSITORY_URL:latest $NGINX_DEMO_DOCKER_REPOSITORY_URL:$IMAGE_TAG
       - docker push $NGINX_DEMO_DOCKER_REPOSITORY_URL:latest
       - docker push $NGINX_DEMO_DOCKER_REPOSITORY_URL:$IMAGE_TAG
-      - printf '[{"name":"nginx","imageUri":"%s"}]' $NGINX_DEMO_DOCKER_REPOSITORY_URL:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"xp-registration-strapi","imageUri":"%s"}]' $NGINX_DEMO_DOCKER_REPOSITORY_URL:$IMAGE_TAG > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
