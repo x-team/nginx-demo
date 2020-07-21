@@ -7,7 +7,7 @@ env:
 phases:
   pre_build:
     commands:
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin NGINX_DEMO_DOCKER_REPOSITORY_URL
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $NGINX_DEMO_DOCKER_REPOSITORY_URL
 
   build:
     commands:
